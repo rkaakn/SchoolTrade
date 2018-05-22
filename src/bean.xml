@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+        
+        <context:component-scan base-package="com.rka"></context:component-scan>
+        
+        <bean id="user" class="com.rka.data.User" scope="prototype"></bean>
+        <bean id="record" class="com.rka.data.Record" scope="prototype"></bean>
+        <bean id="administrator" class="com.rka.data.Administrator" scope="prototype"></bean>
+        <bean id="item" class="com.rka.data.Item" scope="prototype"></bean>
+        <bean id="admindaoimp" class="com.rka.dao.implement.AdministratorDaoImplement" scope="prototype"></bean>
+        <bean id="itemdaoimp" class="com.rka.dao.implement.ItemDaoImplement" scope="prototype"></bean>
+        <bean id="recorddaoimp" class="com.rka.dao.implement.RecordDaoImplement" scope="prototype"></bean>   
+         <bean id="userdaoimp" class="com.rka.dao.implement.UserDaoImplement" scope="prototype"></bean>  
+         <bean id="adminserviceimp" class="com.rka.service.implement.AdministratorServiceImplement" scope="prototype"></bean>  
+         <bean id="itemserviceimp" class="com.rka.service.implement.ItemServiceImplement" scope="prototype"></bean> 
+         <bean id="recordserviceimp" class="com.rka.service.implement.RecordServiceImplement" scope="prototype"></bean> 
+         <bean id="userserviceimp" class="com.rka.service.implement.UserServiceImplement" scope="prototype"></bean>    
+</beans>
